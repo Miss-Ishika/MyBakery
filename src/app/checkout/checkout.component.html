@@ -1,0 +1,58 @@
+
+<h1>HAPPY CKECKOUT !!</h1>
+<div class="container">
+    <div class="left">
+        <div class="form">
+            <div class="name">
+                <div class="first">
+                    <span>First Name</span>
+                    <input type="text" placeholder="Your first name">
+                </div>
+                <div class="last">
+                    <span>Last Name</span>
+                    <input type="text" placeholder="Your family name">
+                </div>
+            </div>
+            <div class="contact">
+                <div class="phone">
+                    <span>Phone</span>
+                    <input type="number" placeholder="Your phone number">
+                </div>
+                <div class="email">
+                    <span>Email</span>
+                    <input type="email" placeholder="Your email address">
+                </div>
+            </div>
+            <div class="add">
+                <span>Enter Address Manually</span>
+                <textarea rows="6"></textarea>
+            </div>
+            <div class="map">
+                <app-map></app-map>
+            </div>
+        </div>
+    </div>
+    <div class="right">
+        <div class="total">
+            <span class="s">
+                Summary
+            </span>
+            <span class="d"><div class="t">Total price: </div><div class="amt">$159</div></span>
+            <span class="d"><div class="t">Discount: </div><div class="amt">$159</div></span>
+            <span class="d"><div class="t">Shippping Charge: </div><div class="amt">$159</div></span>
+            <hr>
+            <span class="d" id="all"><div class="t">Total: </div><div class="amt">$159</div></span>
+            <div class="coupon">
+                <div style="color: grey;">Promo Code - </div>
+                <div style="color: blue; font-weight: 700;">Apply</div>
+            </div>
+        </div>
+        
+        <div class="payment">
+            <app-gpay></app-gpay>
+            <span style="margin-top: 1rem;">OR</span>
+            
+            <button class="home" style="margin-top: 1rem;">Cash on Delivery</button>
+        </div>
+    </div>
+</div>
